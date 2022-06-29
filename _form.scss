@@ -1,0 +1,47 @@
+$blue: #310A90;
+$green: #42E2B8;
+$white: #ffffff;
+$lavander: #bbd0ff;
+
+.Form {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (min-width: 1024px) {
+    align-items: center;
+    inline-size: 500px;
+  }
+}
+
+.form {
+  & h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: $blue;
+    inline-size: 300px;
+
+    @media screen and (min-width: 1024px) {
+      inline-size: 500px;
+    }
+  }
+
+  & label {
+    display: flex;
+    flex-direction: column;
+    color: $blue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap: .5rem;
+
+    & input {
+      margin-bottom: .5rem;
+      padding: .5rem;
+      border-radius: .2rem;
+      border: none;
+    }
+
+    & textarea {
+      margin-bottom: 1rem;
+      border-radius: .2rem;
+      border: none;
+    }
+  }
+}

@@ -1,0 +1,32 @@
+$blue: #310A90;
+$green: #42E2B8;
+$white: #ffffff;
+$lavander: #bbd0ff;
+
+@mixin button-text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22.65px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.button {
+  @include button-text();
+  background: $blue;
+  color: $white;
+  padding-block: 13px;
+  padding-inline: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.25px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button.is-secondary {
+  background: unset;
+  color: $blue;
+  border: 2px solid $blue;
+}

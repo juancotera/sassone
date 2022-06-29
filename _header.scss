@@ -1,0 +1,17 @@
+$blue: #310A90;
+$green: #42E2B8;
+$white: #ffffff;
+$lavander: #bbd0ff;
+
+.header {
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  block-size: 80px;
+}

@@ -1,0 +1,39 @@
+$blue: #310A90;
+$green: #42E2B8;
+$white: #ffffff;
+$lavander: #bbd0ff;
+
+@mixin button-text {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 22.65px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.menu {
+  display: none;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu ul a {
+  @include button-text();
+  text-decoration: none;
+  color: $white;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+}
+
+.menu ul a.is-active {
+  color: $blue;
+}
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: block;
+  }
+}
